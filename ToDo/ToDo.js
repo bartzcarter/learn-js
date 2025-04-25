@@ -1,8 +1,8 @@
 const inputBox = document.getElementById("task-input");
-document.getElementById("add").addEventListener('click', add);
+document.getElementById("add").addEventListener('click', handleAdd);
 
 
-function add() {
+function handleAdd() {
     if (inputBox.value === "") {return}
     const ul = document.getElementById("todo-list");
     const li = document.createElement("li");
