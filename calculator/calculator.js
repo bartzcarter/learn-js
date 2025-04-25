@@ -17,6 +17,7 @@ buttons.addEventListener('click', (e) => {
         return;
     }
 
+    // Evaluate the current input and display
     if (value === "="){
         try{
             currInput = eval(currInput).toString();
@@ -28,6 +29,8 @@ buttons.addEventListener('click', (e) => {
         return;
     }
 
+    // Append current input e.g. 6+7
     currInput += value;
+    // Update the display with the current input
     display.textContent = currInput;
 })
